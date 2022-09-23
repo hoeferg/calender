@@ -24,5 +24,25 @@ function timeTracker() {
             $(this).removeClass("present");
             $(this).addClass("past")
         }
-    })
+        else if (block === $time2) {
+            $(this).removeClass("past");
+            $(this).removeClass("future");
+            $(this).addClass("present");
+        }
+        else {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");
+        }
+}}
 }
+
+$("#9-clock.description").val(localStorage.getItem("9 AM"));
+$("#9-clock.description").val(localStorage.getItem("10 AM"));
+$("#9-clock.description").val(localStorage.getItem("11 AM"));
+$("#9-clock.description").val(localStorage.getItem("12 AM"));
+$("#9-clock.description").val(localStorage.getItem("1 PM"));
+$("#9-clock.description").val(localStorage.getItem("2 PM"));
+$("#9-clock.description").val(localStorage.getItem("3 PM"));
+$("#9-clock.description").val(localStorage.getItem("4 PM"));
+$("#9-clock.description").val(localStorage.getItem("5 PM"));
