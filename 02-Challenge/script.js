@@ -11,14 +11,13 @@ let time = moment().format("h:mm:ss");
 console.log(date);
 
 $(document).ready(function () {
-    $(".saveBtn").on("click", function () {
+    $(".saveBtn").on("click", function (event) {
         let text = $(this).siblings(".description").val();
         let time = $(this).parent().attr("9")
         localStorage.setItem(time, text);
+        event.preventDefault();
     })
-    function timeTracker() {
-        let $time2 = moment().format('dddd');
-    }
+ 
     $(".time-block").each(function () {
         let block = parseFloat($(this).attr("id").split("")[1]);
 
@@ -37,7 +36,8 @@ $(document).ready(function () {
             $(this).removeClass("past");
             $(this).addClass("future");
         }
-    }})
+    })
+}
 
 $("#9-clock.description").val(localStorage.getItem("9 AM"));
 $("#10-clock.description").val(localStorage.getItem("10 AM"));
