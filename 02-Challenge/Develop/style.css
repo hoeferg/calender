@@ -69,3 +69,17 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+.future {
+background-color: aquamarine;
+color:#000000
+}
+
+.past {
+  background-color: darkgray;
+  color: #000000;
+}
+
+.present {
+  background-color: rgb(255, 223, 228);
+  color:black
+}
