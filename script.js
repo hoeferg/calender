@@ -61,6 +61,8 @@ $(document).ready(function () {
     // $("#3-clock.description").val(localStorage.setItem("3 PM"));
     // $("#4-clock.description").val(localStorage.setItem("4 PM"));
     // $("#5-clock.description").val(localStorage.setItem("5 PM"));
+
+    // use the above to save what was put in calender. Need to create a function that when the save button is hit, it saves the information and displays the information.
     timeTracker();
 
 // GIVEN I am using a daily planner to create a schedule
