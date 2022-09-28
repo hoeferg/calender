@@ -19,7 +19,7 @@ $(document).ready(function () {
     )
 })
     function timeTracker() {
-        let $time2 = moment().formate('dddd');
+        let $time2 = moment().format('dddd');
 
         $(".time-block").each(function () {
             let block = parseFloat($(this).attr("id").split("")[1]);
@@ -52,16 +52,16 @@ $(document).ready(function () {
     $("#4-clock.description").val(localStorage.getItem("4 PM"));
     $("#5-clock.description").val(localStorage.getItem("5 PM"));
 
-    $("#9-clock.description").val(localStorage.setItem("9 AM"));
-    $("#10-clock.description").val(localStorage.setItem("10 AM"));
-    $("#11-clock.description").val(localStorage.setItem("11 AM"));
-    $("#12-clock.description").val(localStorage.setItem("12 AM"));
-    $("#1-clock.description").val(localStorage.setItem("1 PM"));
-    $("#2-clock.description").val(localStorage.setItem("2 PM"));
-    $("#3-clock.description").val(localStorage.setItem("3 PM"));
-    $("#4-clock.description").val(localStorage.setItem("4 PM"));
-    $("#5-clock.description").val(localStorage.setItem("5 PM"));
-    $timeTracker();
+    // $("#9-clock.description").val(localStorage.setItem("9 AM"));
+    // $("#10-clock.description").val(localStorage.setItem("10 AM"));
+    // $("#11-clock.description").val(localStorage.setItem("11 AM"));
+    // $("#12-clock.description").val(localStorage.setItem("12 AM"));
+    // $("#1-clock.description").val(localStorage.setItem("1 PM"));
+    // $("#2-clock.description").val(localStorage.setItem("2 PM"));
+    // $("#3-clock.description").val(localStorage.setItem("3 PM"));
+    // $("#4-clock.description").val(localStorage.setItem("4 PM"));
+    // $("#5-clock.description").val(localStorage.setItem("5 PM"));
+    timeTracker();
 
 // GIVEN I am using a daily planner to create a schedule
 // WHEN I open the planner
