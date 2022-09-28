@@ -5,7 +5,7 @@
 // change colors based on local time
 let date = moment().format("MM Do YYYY");
 
-$(#currentDay).text(date);
+$("#currentDay").text(date);
 
 let time = moment().format("h:mm:ss");
 console.log(date);
@@ -16,7 +16,8 @@ $(document).ready(function () {
         let text = $(this).siblings(".description").val();
         let time = $(this).parent().attr("9")
         localStorage.setItem("time", "text");}
-    ,)
+    )
+})
     function timeTracker() {
         let $time2 = moment().formate('dddd');
 
