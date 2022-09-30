@@ -14,19 +14,21 @@ $(document).ready(function () {
     $(".saveBtn").on("click", function (event) {
         event.preventDefault();
         let text = $(this).siblings(".description").val();
-        let time = $(this).parent().attr("9")
-        localStorage.setItem("time", "text");}
+        let time = $(this).parent().attr("id")
+        localStorage.setItem(time, text);
+        console.log(text)
+        console.log(time)
+    }
     )
 })
     function timeTracker() {
-        let $time2 = moment().format('dddd');
+        let $time2 = parseInt(moment().hour());
 
         $(".time-block").each(function () {
-            let block = parseFloat($(this).attr("id").split("")[1]);
-
+            let block = parseInt($(this).attr("id"));
+            console.log($time2)
+            console.log(block)
             if (block < $time2) {
-                $(this).removeClass("future");
-                $(this).removeClass("present");
                 $(this).addClass("past");
             }
             else if (block === $time2) {
@@ -42,15 +44,15 @@ $(document).ready(function () {
         })
     }
 
-    $("#9-clock.description").val(localStorage.getItem("9 AM"));
-    $("#10-clock.description").val(localStorage.getItem("10 AM"));
-    $("#11-clock.description").val(localStorage.getItem("11 AM"));
-    $("#12-clock.description").val(localStorage.getItem("12 AM"));
-    $("#1-clock.description").val(localStorage.getItem("1 PM"));
-    $("#2-clock.description").val(localStorage.getItem("2 PM"));
-    $("#3-clock.description").val(localStorage.getItem("3 PM"));
-    $("#4-clock.description").val(localStorage.getItem("4 PM"));
-    $("#5-clock.description").val(localStorage.getItem("5 PM"));
+    $("#9-clock .description").val(localStorage.getItem("9-clock"));
+    $("#10-clock .description").val(localStorage.getItem("10-clock"));
+    $("#11-clock .description").val(localStorage.getItem("11-clock"));
+    $("#12-clock .description").val(localStorage.getItem("12-clock"));
+    $("#13-clock .description").val(localStorage.getItem("13-clock"));
+    $("#14-clock .description").val(localStorage.getItem("14-clock"));
+    $("#15-clock .description").val(localStorage.getItem("15-clock"));
+    $("#16-clock .description").val(localStorage.getItem("16-clock"));
+    $("#17-clock .description").val(localStorage.getItem("17-clock"));
 
     // $("#9-clock.description").val(localStorage.setItem("9 AM"));
     // $("#10-clock.description").val(localStorage.setItem("10 AM"));
