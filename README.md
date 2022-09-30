@@ -11,7 +11,7 @@ The installation of this project requires going to the following website: https:
 
 ## Usage
 
-When you open the website, put your schedule in the box and hit save. When that time comes, the box will be red. The calender that you make will be saved till the next time you come visit.
+When you open the website, put your schedule in the box and hit save. When that time comes, the section for that time will be red. If the time is in the future, the section with that time will be blue. If the time is in the past, the color of the section will be gray. The calender that you make will be saved till the next time you come visit.
 
 ![Screen Shot](assets/images/work-day.png)
 
