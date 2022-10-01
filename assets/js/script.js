@@ -1,8 +1,3 @@
-//header date
-// local time
-// save to local storage and save when refreshed
-// time blocks for past, present, and future time
-// change colors based on local time
 let date = moment().format("MM Do YYYY");
 
 $("#currentDay").text(date);
@@ -54,29 +49,5 @@ $(document).ready(function () {
     $("#16-clock .description").val(localStorage.getItem("16-clock"));
     $("#17-clock .description").val(localStorage.getItem("17-clock"));
 
-    // $("#9-clock.description").val(localStorage.setItem("9 AM"));
-    // $("#10-clock.description").val(localStorage.setItem("10 AM"));
-    // $("#11-clock.description").val(localStorage.setItem("11 AM"));
-    // $("#12-clock.description").val(localStorage.setItem("12 AM"));
-    // $("#1-clock.description").val(localStorage.setItem("1 PM"));
-    // $("#2-clock.description").val(localStorage.setItem("2 PM"));
-    // $("#3-clock.description").val(localStorage.setItem("3 PM"));
-    // $("#4-clock.description").val(localStorage.setItem("4 PM"));
-    // $("#5-clock.description").val(localStorage.setItem("5 PM"));
-
-    // use the above to save what was put in calender. Need to create a function that when the save button is hit, it saves the information and displays the information.
     timeTracker();
 
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-// WHEN I scroll down
-// THEN I am presented with time blocks for standard business hours
-// WHEN I view the time blocks for that day
-// THEN each time block is color coded to indicate whether it is in the past, present, or future
-// WHEN I click into a time block
-// THEN I can enter an event
-// WHEN I click the save button for that time block
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
