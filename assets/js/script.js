@@ -5,6 +5,7 @@ $("#currentDay").text(date);
 let time = moment().format("h:mm:ss");
 console.log(date);
 
+// This capture the input from the calender
 $(document).ready(function () { 
     $(".saveBtn").on("click", function (event) {
         event.preventDefault();
@@ -16,6 +17,7 @@ $(document).ready(function () {
     }
     )
 })
+// This function keeps track of the time and controls when the color will change.
     function timeTracker() {
         let $time2 = parseInt(moment().hour());
 
@@ -38,6 +40,7 @@ $(document).ready(function () {
             }
         })
     }
+    // This gets the information from local storage
 
     $("#9-clock .description").val(localStorage.getItem("9-clock"));
     $("#10-clock .description").val(localStorage.getItem("10-clock"));
