@@ -17,9 +17,6 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -27,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/hoeferg/calendar">
-    <img src="calender.png" alt="Logo" width="80" height="80">
+    <img src="calender.png" alt="Logo" >
   </a>
 
 <h3 align="center">Calender</h3>
