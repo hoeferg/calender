@@ -139,8 +139,7 @@ N/A
 
 <!-- CONTACT -->
 ## Contact
-
-Gayle Hoefer - gaylehoefer@gmail.com
+Gayle Hoefer - [LinkedIn](https://www.linkedin.com/in/gayle-hoefer-61a2a3124/) - [Github](https://github.com/hoeferg)
 
 Project Link: [https://github.com/hoeferg/calendar](https://github.com/hoeferg/calendar)
 
